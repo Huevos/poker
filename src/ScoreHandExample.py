@@ -3,8 +3,8 @@ from ScoreHand import ScoreHand
 
 # if you have a deck of 52 cards, remove 4 cards (2 each for 2 players)
 # leaves 48 in the deck. The number of possible 5 card communities that
-# can be made from the 48 remaining cards will be 1,712,304. Multiply by 
-# number of players gives the number of times the hand evaluator would 
+# can be made from the 48 remaining cards will be 1,712,304. Multiply by
+# number of players gives the number of times the hand evaluator would
 # have to run to do a full brute force search of all possible communities
 # to determine probability with 100% accuray.
 num_loops = 1712304 * 2

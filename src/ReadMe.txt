@@ -1,3 +1,5 @@
+Poker hand evaluator
+
 http://bokehman.satellites-xml.org/poker_calculator/
 
 There are three packages here, each one with a working example file:

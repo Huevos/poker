@@ -18,7 +18,7 @@ for i in range(num_loops):
 
 total_time = time() - start_time
 
-print ("Hand:", hand)
-print ("HandScore: %d" % HandScore)
-print ("Total run time for %d evaluations: %.2f secs" % (num_loops, total_time))
-print ("Evaluations per second: %d" % int(num_loops / float("%.2f" % total_time)))
+print("Hand:", hand)
+print("HandScore: %d" % HandScore)
+print("Total run time for %d evaluations: %.2f secs" % (num_loops, total_time))
+print("Evaluations per second: %d" % int(num_loops / float("%.2f" % total_time)))

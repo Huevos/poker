@@ -17,16 +17,16 @@ def NameHand(score, ListKickers = False):
 
 	if HandCategory == HIGHCARD:
 		cards = HandContent[score - 5863]
-		return 'High card: %s%s' % (CardNames['singular'][cards[0]], "with %s, %s, %s and %s kickers" % (CardNames['singular'][cards[1]], CardNames['singular'][cards[2]], CardNames['singular'][cards[3]], CardNames['singular'][cards[4]]) if ListKickers else "")
+		return 'High card: %s%s' % (CardNames['singular'][cards[0]], " with %s, %s, %s and %s kickers" % (CardNames['singular'][cards[1]], CardNames['singular'][cards[2]], CardNames['singular'][cards[3]], CardNames['singular'][cards[4]]) if ListKickers else "")
 
 	if HandCategory == PAIR:
-		return 'Pair: %s%s' % (CardNames['plural'][cards[0]], "with %s, %s and %s kickers" % (CardNames['singular'][cards[2]], CardNames['singular'][cards[3]], CardNames['singular'][cards[4]]) if ListKickers else "")
+		return 'Pair: %s%s' % (CardNames['plural'][cards[0]], " with %s, %s and %s kickers" % (CardNames['singular'][cards[2]], CardNames['singular'][cards[3]], CardNames['singular'][cards[4]]) if ListKickers else "")
 
 	if HandCategory == TWOPAIR:
-		return 'Two pair: %s and %s%s' % (CardNames['plural'][cards[0]], CardNames['plural'][cards[2]], "with a%s %s kicker" % ("n" if cards[4][0] in ("A", "8") else "", CardNames['singular'][cards[4]]) if ListKickers else "")
+		return 'Two pair: %s and %s%s' % (CardNames['plural'][cards[0]], CardNames['plural'][cards[2]], " with a%s %s kicker" % ("n" if cards[4][0] in ("A", "8") else "", CardNames['singular'][cards[4]]) if ListKickers else "")
 
 	if HandCategory == TRIPS:
-		return 'Trips: %s%s' % (CardNames['plural'][cards[0]], "with %s and %s kickers" % (CardNames['singular'][cards[3]], CardNames['singular'][cards[4]]) if ListKickers else "")
+		return 'Trips: %s%s' % (CardNames['plural'][cards[0]], " with %s and %s kickers" % (CardNames['singular'][cards[3]], CardNames['singular'][cards[4]]) if ListKickers else "")
 
 	if HandCategory == STRAIGHT:
 		cards = HandContent[score - 1599]
